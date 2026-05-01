@@ -20,6 +20,16 @@ export function Hero({ initial }: Props) {
 
   return (
     <header className="relative w-full overflow-hidden">
+      {/* Local scrim: cream gradient only behind the text region of the hero */}
+      <div
+        className="absolute inset-x-0 top-0 h-[70%] -z-0 pointer-events-none"
+        style={{
+          background:
+            'linear-gradient(180deg, rgba(255,245,236,0.92) 0%, rgba(255,245,236,0.78) 40%, rgba(255,245,236,0.40) 75%, rgba(255,245,236,0) 100%)',
+        }}
+        aria-hidden="true"
+      />
+
       <Confetti milestone={milestone} />
 
       <div className="relative max-w-6xl mx-auto px-5 sm:px-8 pt-12 sm:pt-24 pb-20 sm:pb-32">
