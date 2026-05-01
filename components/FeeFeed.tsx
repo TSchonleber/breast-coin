@@ -35,10 +35,14 @@ export function FeeFeed({ stats, previous }: Props) {
   }, [stats, previous])
 
   if (rows.length === 0) {
+    if (!stats) return null
     return (
-      <div className="rounded-2xl bg-pink-50 border border-[color:var(--rule)] p-6 text-sm text-ink-soft">
-        Waiting for the next trade…
-      </div>
+      <ul className="space-y-2">
+        <li className="flex items-center justify-between rounded-xl bg-white border border-[color:var(--rule)] px-4 py-3 shadow-[var(--shadow-soft)]">
+          <span className="font-bold text-pink-900 tnum">latest distribution</span>
+          <span className="text-xs text-ink-soft">{relativeTime(Date.parse(stats.lastDonationAt))}</span>
+        </li>
+      </ul>
     )
   }
 
