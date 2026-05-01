@@ -20,22 +20,6 @@ export function Hero({ initial }: Props) {
 
   return (
     <header className="relative w-full overflow-hidden">
-      {/* Ambient video underlay — falls back to cream gradient if file missing */}
-      <div className="absolute inset-0 -z-10">
-        <video
-          className="w-full h-full object-cover opacity-90"
-          autoPlay
-          loop
-          muted
-          playsInline
-          aria-hidden="true"
-        >
-          <source src="/hero-loop.webm" type="video/webm" />
-          <source src="/hero-loop.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-cream/40 via-cream/70 to-cream" />
-      </div>
-
       <Confetti milestone={milestone} />
 
       <div className="relative max-w-6xl mx-auto px-5 sm:px-8 pt-12 sm:pt-24 pb-20 sm:pb-32">
@@ -56,7 +40,6 @@ export function Hero({ initial }: Props) {
           <b className="text-pink-700">99% of every fee</b> routes straight to the {CHARITY.name}, on-chain.
         </p>
 
-        {/* Counter inline, no card wrapper — feels more cinematic */}
         <div className="mt-12 flex flex-col gap-1">
           <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-pink-700">Raised live → NBCF</div>
           <div className="text-6xl sm:text-7xl lg:text-8xl font-black text-pink-900 leading-[0.9] tracking-[-0.04em]">
