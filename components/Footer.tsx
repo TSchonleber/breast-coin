@@ -7,9 +7,9 @@ export function Footer() {
     <Section as="footer" className="py-12 border-t border-[color:var(--rule)] mt-12">
       <div className="flex flex-col sm:flex-row gap-6 sm:items-end sm:justify-between">
         <div>
-          <Wordmark size="sm" inline />
+          <Wordmark size="sm" />
           <p className="mt-2 text-xs text-ink-soft max-w-md">
-            © {new Date().getFullYear()} Breast.coin · all proceeds to {CHARITY.shortName}.
+            © {new Date().getFullYear()} Breastcoin · all proceeds to {CHARITY.shortName}.
           </p>
         </div>
         <p className="text-[11px] text-ink-soft max-w-md leading-relaxed">
