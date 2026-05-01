@@ -38,7 +38,7 @@ export function FeeFeed({ stats, previous }: Props) {
     if (!stats) return null
     return (
       <ul className="space-y-2">
-        <li className="flex items-center justify-between rounded-xl bg-white border border-[color:var(--rule)] px-4 py-3 shadow-[var(--shadow-soft)]">
+        <li className="flex items-center justify-between rounded-xl bg-white/85 backdrop-blur-xl border border-[color:var(--rule)] px-4 py-3 shadow-[var(--shadow-soft)]">
           <span className="font-bold text-pink-900 tnum">latest distribution</span>
           <span className="text-xs text-ink-soft">{relativeTime(Date.parse(stats.lastDonationAt))}</span>
         </li>
@@ -57,7 +57,7 @@ export function FeeFeed({ stats, previous }: Props) {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -30 }}
             transition={{ duration: 0.35, ease: 'easeOut' }}
-            className="flex items-center justify-between rounded-xl bg-white border border-[color:var(--rule)] px-4 py-3 shadow-[var(--shadow-soft)]"
+            className="flex items-center justify-between rounded-xl bg-white/85 backdrop-blur-xl border border-[color:var(--rule)] px-4 py-3 shadow-[var(--shadow-soft)]"
           >
             <span className="font-bold text-pink-900 tnum">+{formatUsd(r.usd)}</span>
             <span className="text-xs text-ink-soft">{relativeTime(r.at)}</span>

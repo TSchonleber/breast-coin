@@ -28,14 +28,14 @@ export function TrackerChart() {
 
   if (!path) {
     return (
-      <div className="rounded-2xl bg-pink-50 border border-[color:var(--rule)] p-6 text-sm text-ink-soft">
+      <div className="rounded-2xl bg-pink-50/75 backdrop-blur-xl border border-[color:var(--rule)] p-6 text-sm text-ink-soft">
         Chart will populate after the first snapshot.
       </div>
     )
   }
 
   return (
-    <div className="rounded-2xl bg-white border border-[color:var(--rule)] p-5 shadow-[var(--shadow-soft)]">
+    <div className="rounded-2xl bg-white/85 backdrop-blur-xl border border-[color:var(--rule)] p-5 shadow-[var(--shadow-soft)]">
       <div className="flex items-baseline justify-between mb-3">
         <div className="text-[10px] font-bold uppercase tracking-[0.14em] text-pink-700">14-day raise</div>
         <div className="text-xs text-ink-soft">peak {formatUsdCompact(path.yMax)}</div>

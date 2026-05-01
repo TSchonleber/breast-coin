@@ -14,7 +14,7 @@ export function WhyThisExists() {
         {CARDS.map(c => (
           <div
             key={c.label}
-            className="rounded-2xl bg-pink-50 p-6 border border-[color:var(--rule)]"
+            className="rounded-2xl bg-pink-50/75 backdrop-blur-xl p-6 border border-[color:var(--rule)]"
           >
             <div className="text-[10px] font-bold uppercase tracking-[0.14em] text-pink-700">{c.label}</div>
             <div className="mt-2 text-2xl font-black text-pink-900 tracking-tight">{c.title}</div>

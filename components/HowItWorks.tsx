@@ -24,7 +24,7 @@ export function HowItWorks() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.5, delay: i * 0.08, ease: 'easeOut' }}
-            className="rounded-2xl bg-white p-5 border border-[color:var(--rule)]"
+            className="rounded-2xl bg-white/85 backdrop-blur-xl p-5 border border-[color:var(--rule)]"
           >
             <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-pink-700">Step {s.n}</div>
             <div className="mt-2 text-lg font-black text-ink leading-tight">{s.title}</div>
