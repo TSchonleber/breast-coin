@@ -56,7 +56,7 @@ export function Hero({ initial }: Props) {
             <Counter value={usd} />
           </div>
           <div className="text-sm text-ink-soft mt-2">
-            {count} distributions{rank ? ` · ranked #${rank} on pump.fun` : ''} · live
+            {count} distributions{rank ? ` · ranked #${rank} on donate.gg` : ''} · live
           </div>
         </div>
 

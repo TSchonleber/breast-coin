@@ -12,7 +12,7 @@ export function MarqueeTicker({ stats }: Props) {
     stats ? `${formatUsd(stats.displayedUsd)} raised` : 'loading',
     `99% of trade fees → ${CHARITY.shortName}`,
     stats ? `${stats.donationCount} distributions` : '',
-    stats?.rank ? `#${stats.rank} on pump.fun` : '',
+    stats?.rank ? `#${stats.rank} on donate.gg` : '',
     'Solana · SPL Token-2022',
     'on-chain · verifiable',
   ].filter(Boolean)
