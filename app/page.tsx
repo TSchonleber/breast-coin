@@ -1,4 +1,5 @@
 import { Hero } from '@/components/Hero'
+import { MarqueeTicker } from '@/components/MarqueeTicker'
 import { WhyThisExists } from '@/components/WhyThisExists'
 import { HowItWorks } from '@/components/HowItWorks'
 import { LiveTracker } from '@/components/LiveTracker'
@@ -32,6 +33,7 @@ export default async function Home() {
   const initial = await loadInitialStats()
   return (
     <main>
+      <MarqueeTicker stats={initial} />
       <Hero initial={initial} />
       <WhyThisExists />
       <HowItWorks />
