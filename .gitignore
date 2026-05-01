@@ -7,3 +7,5 @@ node_modules
 .superpowers
 *.log
 *.tsbuildinfo
+test-results
+playwright-report
