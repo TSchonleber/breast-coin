@@ -6,7 +6,6 @@ export function BackgroundVideo() {
       className="fixed inset-0 -z-10 overflow-hidden pointer-events-none"
       aria-hidden="true"
     >
-      {/* The ambient looping video. Falls back to a soft pink-cream gradient if files missing. */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
         autoPlay
@@ -18,7 +17,7 @@ export function BackgroundVideo() {
         <source src="/hero-loop.mp4" type="video/mp4" />
       </video>
 
-      {/* Always-on fallback gradient (sits below video; visible if video fails to load) */}
+      {/* Fallback gradient sits below the video; visible only if files fail to load */}
       <div
         className="absolute inset-0 -z-10"
         style={{
@@ -27,12 +26,8 @@ export function BackgroundVideo() {
         }}
       />
 
-      {/* Top + bottom scrims keep marquee/footer regions readable, and add depth */}
-      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-cream/95 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-cream/95 to-transparent" />
-
-      {/* Soft global tint so any video color stays in the brand palette */}
-      <div className="absolute inset-0 bg-cream/35 mix-blend-soft-light" />
+      {/* Bottom scrim — keeps the footer region readable */}
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-cream/95 to-transparent" />
     </div>
   )
 }
