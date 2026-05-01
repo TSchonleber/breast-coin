@@ -24,7 +24,7 @@ export function TokenBlock() {
     <Section className="py-16 sm:py-24">
       <h2 className="text-3xl sm:text-4xl font-black tracking-tight">The token</h2>
 
-      <div className="mt-8 rounded-2xl bg-white/85 backdrop-blur-xl border border-[color:var(--rule)] p-6 shadow-[var(--shadow-soft)]">
+      <div className="mt-8 rounded-2xl bg-white border border-[color:var(--rule)] p-6 shadow-[var(--shadow-soft)]">
         <div className="text-[10px] font-bold uppercase tracking-[0.14em] text-pink-700">Contract address</div>
         <div className="mt-2 flex flex-wrap items-center gap-2">
           <code className="font-mono text-sm sm:text-base text-pink-900 break-all select-all">{TOKEN.mint}</code>

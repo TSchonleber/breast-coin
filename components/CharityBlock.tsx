@@ -17,7 +17,7 @@ export function CharityBlock() {
       <h2 className="text-3xl sm:text-4xl font-black tracking-tight">The cause</h2>
 
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6 items-start">
-        <div className="sm:col-span-2 rounded-2xl bg-pink-50/75 backdrop-blur-xl border border-[color:var(--rule)] p-6">
+        <div className="sm:col-span-2 rounded-2xl bg-pink-50 border border-[color:var(--rule)] p-6">
           <div className="text-[10px] font-bold uppercase tracking-[0.14em] text-pink-700">Beneficiary</div>
           <h3 className="mt-2 text-2xl font-black text-pink-900 leading-tight">{CHARITY.name}</h3>
           <p className="mt-3 text-sm text-ink-soft leading-relaxed">
@@ -34,7 +34,7 @@ export function CharityBlock() {
           </a>
         </div>
 
-        <div className="rounded-2xl bg-white/85 backdrop-blur-xl border border-[color:var(--rule)] p-6 shadow-[var(--shadow-soft)]">
+        <div className="rounded-2xl bg-white border border-[color:var(--rule)] p-6 shadow-[var(--shadow-soft)]">
           <div className="text-[10px] font-bold uppercase tracking-[0.14em] text-pink-700">Credited account</div>
           <code className="mt-2 block font-mono text-xs text-pink-900 break-all select-all">{CHARITY.creditedAccount}</code>
           <div className="mt-3 flex gap-2">
