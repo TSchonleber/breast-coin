@@ -16,9 +16,14 @@
   --shadow-soft: 0 8px 22px -16px rgba(190, 24, 93, 0.5);
 }
 
-html, body {
+html {
   background: var(--color-cream);
   color: var(--color-ink);
+}
+
+body {
+  color: var(--color-ink);
+  background: transparent;
 }
 
 * {
